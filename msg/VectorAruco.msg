@@ -1,0 +1,1 @@
+triangulacion/PoseAruco[] aruco

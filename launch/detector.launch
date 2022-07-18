@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch"/>
+  <node pkg="triangulacion" type="fractal_tracker" name="detection_aruco" output="screen"/>
+  <node pkg="triangulacion" type="Algoritmo_Triangulacion_Geometrica" name="ATG_aruco" output="screen"/>
+  <!--<node pkg="triangulacion" type="trayectorias" name="referencia" output="screen"/>-->
+ <node pkg="triangulacion" type="control" name="control" output="screen"/>
+</launch>
